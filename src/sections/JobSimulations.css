@@ -1,0 +1,38 @@
+.job-sim-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+.job-sim-card {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-1);
+}
+
+.job-sim-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--blue-soft);
+  color: var(--blue);
+  margin-bottom: var(--space-3);
+}
+
+.job-sim-provider {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.job-sim-title {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-2);
+}
