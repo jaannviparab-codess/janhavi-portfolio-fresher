@@ -155,6 +155,50 @@ export const certifications = [
     name: 'Advanced Excel',
     date: 'September 2025',
   },
+  // Certificates with a PDF. Every value below is copied from the certificate
+  // itself. `pdf` is the original file; `preview` is page 1 of that PDF.
+  {
+    name: 'Data Analytics Job Simulation',
+    issuer: 'Deloitte',
+    issuedBy: 'Forage',
+    date: 'June 25th, 2026',
+    period: 'April 2026 to June 2026',
+    tasks: ['Data analysis', 'Forensic technology'],
+    pdf: '/certificates/deloitte-data-analytics-job-simulation.pdf',
+    preview: '/certificates/previews/deloitte-data-analytics-job-simulation.webp',
+  },
+  {
+    name: 'GenAI Powered Data Analytics Job Simulation',
+    issuer: 'TATA',
+    issuedBy: 'Forage',
+    date: 'July 11th, 2026',
+    period: 'June 2026 to July 2026',
+    tasks: [
+      'Exploratory data analysis and risk profiling',
+      'Predicting delinquency with AI',
+      'Business report and data storytelling for collections strategy',
+      'Implementing an AI-driven collections strategy',
+    ],
+    pdf: '/certificates/tata-genai-powered-data-analytics-job-simulation.pdf',
+    preview:
+      '/certificates/previews/tata-genai-powered-data-analytics-job-simulation.webp',
+  },
+  {
+    name: 'Quantitative Research Job Simulation',
+    issuer: 'JPMorgan Chase & Co.',
+    issuedBy: 'Forage',
+    date: 'June 25th, 2026',
+    period: 'June 2026',
+    tasks: [
+      'Investigate and analyze price data',
+      'Price a commodity storage contract',
+      'Credit risk analysis',
+      'Bucket FICO scores',
+    ],
+    pdf: '/certificates/jpmorgan-quantitative-research-job-simulation.pdf',
+    preview:
+      '/certificates/previews/jpmorgan-quantitative-research-job-simulation.webp',
+  },
 ]
 
 export const currentlyLearning = [

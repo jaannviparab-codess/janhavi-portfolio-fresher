@@ -32,3 +32,101 @@
   font-size: 0.85rem;
   color: var(--text-tertiary);
 }
+
+/* Certificates with a PDF: preview thumbnail + details + "View Certificate" */
+.cert-doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+}
+
+.cert-doc-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cert-doc-preview {
+  display: block;
+  aspect-ratio: 1263 / 893;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-doc-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.cert-doc-card:hover .cert-doc-preview img {
+  transform: scale(1.03);
+}
+
+.cert-doc-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: var(--space-5);
+}
+
+.cert-doc-issuer {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cert-doc-title {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-2);
+}
+
+.cert-doc-meta {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-4);
+}
+
+.cert-doc-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.cert-doc-tasks li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.cert-doc-tasks svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--teal);
+}
+
+.cert-doc-button {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cert-doc-preview img {
+    transition: none;
+  }
+
+  .cert-doc-card:hover .cert-doc-preview img {
+    transform: none;
+  }
+}
